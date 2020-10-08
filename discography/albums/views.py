@@ -11,7 +11,6 @@ def get_discography(request):
         form = ArtistForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            print('here')
             client_id = '46b9c72dfda645c78b170f3cfb0e6068'
             client_secret = 'b7de73060ce74465983df1debcf593d3'
             client_credentials_manager = SpotifyClientCredentials(
@@ -44,7 +43,6 @@ def get_discography(request):
                 'albums_list': album_names,
                 'form': form,
             }
-            print(context)
             return render(request, 'albums/index.html', context)
     else:
         form = ArtistForm()
