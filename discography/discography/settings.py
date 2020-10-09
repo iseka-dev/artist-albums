@@ -39,7 +39,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECRET_KEY = '_=_3ne1&z#ged&cmf=@s&of@0b(4bg=k6pefz9h40)n&=j-o21'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'discography.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'NAME': BASE_DIR /'db.sqlite3',
     }
 }
 
