@@ -1,2 +1,2 @@
-web: gunicorn artist-albums.wsgi:application --log-file -
+web: gunicorn limitless-garden-08350.wsgi --log-file -
 
