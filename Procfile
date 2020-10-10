@@ -1,2 +1,2 @@
-web: gunicorn discography.wsgi:application --log-file -
+web: gunicorn artist-albums.wsgi:application --log-file -
 
